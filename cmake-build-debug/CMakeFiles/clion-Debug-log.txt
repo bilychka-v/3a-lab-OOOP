@@ -15,6 +15,6 @@
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
 -- Found Threads: TRUE  
--- Configuring done (4.4s)
+-- Configuring done (3.1s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/cmake-build-debug

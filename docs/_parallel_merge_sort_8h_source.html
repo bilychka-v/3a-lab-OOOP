@@ -1,4 +1,4 @@
- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
@@ -87,31 +87,39 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">ParallelMergeSort.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef INC_3_LAB_PARALLELMERGESORT_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define INC_3_LAB_PARALLELMERGESORT_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;ISort.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_parallel_merge_sort.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="class_parallel_merge_sort.html">ParallelMergeSort</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_i_sort.html">ISort</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="class_parallel_merge_sort.html">ParallelMergeSort</a>(<span class="keywordtype">int</span> depth);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">void</span> sort(std::vector&lt;int&gt;&amp; arr) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">bool</span> isSorted(<span class="keyword">const</span> std::vector&lt;int&gt;&amp; arr) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> merge(std::vector&lt;int&gt;&amp; arr, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> r);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span> parallelMergeSort(std::vector&lt;int&gt;&amp; arr, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> r, <span class="keywordtype">int</span> depth);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> mergeSort(std::vector&lt;int&gt;&amp; arr, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> r);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">int</span> depth_;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+<a href="_parallel_merge_sort_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef INC_3_LAB_PARALLELMERGESORT_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define INC_3_LAB_PARALLELMERGESORT_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_i_sort_8h.html">ISort.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_parallel_merge_sort.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="class_parallel_merge_sort.html">ParallelMergeSort</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_i_sort.html">ISort</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_parallel_merge_sort.html#a0e4a2fccf40d9b19a4023db363c77519">ParallelMergeSort</a>(<span class="keywordtype">int</span> depth);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_parallel_merge_sort.html#ae752ae4e0cf9b5f7fbef1bd96e1cdc19">sort</a>(std::vector&lt;int&gt;&amp; arr) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_parallel_merge_sort.html#a914846af0f603c5ebf2d8f05ad3da4e2">isSorted</a>(<span class="keyword">const</span> std::vector&lt;int&gt;&amp; arr) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> merge(std::vector&lt;int&gt;&amp; arr, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> r);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> parallelMergeSort(std::vector&lt;int&gt;&amp; arr, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> r, <span class="keywordtype">int</span> depth);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> mergeSort(std::vector&lt;int&gt;&amp; arr, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> r);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">int</span> depth_;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
 </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif </span><span class="comment">//INC_3_LAB_PARALLELMERGESORT_H</span></div>
-<div class="ttc" id="aclass_i_sort_html"><div class="ttname"><a href="class_i_sort.html">ISort</a></div><div class="ttdef"><b>Definition</b> ISort.h:6</div></div>
-<div class="ttc" id="aclass_parallel_merge_sort_html"><div class="ttname"><a href="class_parallel_merge_sort.html">ParallelMergeSort</a></div><div class="ttdef"><b>Definition</b> ParallelMergeSort.h:6</div></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif </span><span class="comment">//INC_3_LAB_PARALLELMERGESORT_H</span></div>
+<div class="ttc" id="a_i_sort_8h_html"><div class="ttname"><a href="_i_sort_8h.html">ISort.h</a></div><div class="ttdoc">Definition of the sorting interface.</div></div>
+<div class="ttc" id="aclass_i_sort_html"><div class="ttname"><a href="class_i_sort.html">ISort</a></div><div class="ttdoc">Abstract class for implementing sorting algorithms.</div><div class="ttdef"><b>Definition</b> ISort.h:15</div></div>
+<div class="ttc" id="aclass_parallel_merge_sort_html"><div class="ttname"><a href="class_parallel_merge_sort.html">ParallelMergeSort</a></div><div class="ttdoc">Class for implementing parallel merge sort algorithm.</div><div class="ttdef"><b>Definition</b> ParallelMergeSort.h:15</div></div>
+<div class="ttc" id="aclass_parallel_merge_sort_html_a0e4a2fccf40d9b19a4023db363c77519"><div class="ttname"><a href="class_parallel_merge_sort.html#a0e4a2fccf40d9b19a4023db363c77519">ParallelMergeSort::ParallelMergeSort</a></div><div class="ttdeci">ParallelMergeSort(int depth)</div><div class="ttdoc">Constructor for ParallelMergeSort.</div><div class="ttdef"><b>Definition</b> ParallelMergeSort.cpp:13</div></div>
+<div class="ttc" id="aclass_parallel_merge_sort_html_a914846af0f603c5ebf2d8f05ad3da4e2"><div class="ttname"><a href="class_parallel_merge_sort.html#a914846af0f603c5ebf2d8f05ad3da4e2">ParallelMergeSort::isSorted</a></div><div class="ttdeci">bool isSorted(const std::vector&lt; int &gt; &amp;arr) const override</div><div class="ttdoc">Checks if the given array is sorted.</div><div class="ttdef"><b>Definition</b> ParallelMergeSort.cpp:114</div></div>
+<div class="ttc" id="aclass_parallel_merge_sort_html_ae752ae4e0cf9b5f7fbef1bd96e1cdc19"><div class="ttname"><a href="class_parallel_merge_sort.html#ae752ae4e0cf9b5f7fbef1bd96e1cdc19">ParallelMergeSort::sort</a></div><div class="ttdeci">void sort(std::vector&lt; int &gt; &amp;arr) override</div><div class="ttdoc">Sorts the given array using parallel merge sort algorithm.</div><div class="ttdef"><b>Definition</b> ParallelMergeSort.cpp:105</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

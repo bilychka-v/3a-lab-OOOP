@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(3_lab
         main.cpp
-        ISort.cpp
         ISort.h
         SequentialMergeSort.cpp
         SequentialMergeSort.h
@@ -34,7 +33,6 @@ enable_testing()
 # Add test executable
 add_executable(test_sort
         test_sort.cpp
-        ISort.cpp
         ISort.h
         SequentialMergeSort.cpp
         SequentialMergeSort.h

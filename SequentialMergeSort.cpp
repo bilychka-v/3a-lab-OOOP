@@ -1,6 +1,17 @@
-// File: SequentialMergeSort.cpp
+/**
+ * @file SequentialMergeSort.cpp
+ * @brief Implementation of the SequentialMergeSort class.
+ */
+
 #include "SequentialMergeSort.h"
 
+/**
+ * @brief Merges two subarrays of arr.
+ * @param arr Vector of integers to be merged.
+ * @param l Left index.
+ * @param m Middle index.
+ * @param r Right index.
+ */
 void SequentialMergeSort::merge(std::vector<int>& arr, int l, int m, int r) {
     int n1 = m - l + 1;
     int n2 = r - m;
@@ -40,6 +51,12 @@ void SequentialMergeSort::merge(std::vector<int>& arr, int l, int m, int r) {
     }
 }
 
+/**
+ * @brief Sorts the array using merge sort algorithm.
+ * @param arr Vector of integers to be sorted.
+ * @param l Left index.
+ * @param r Right index.
+ */
 void SequentialMergeSort::mergeSort(std::vector<int>& arr, int l, int r) {
     if (l >= r)
         return;
@@ -50,10 +67,19 @@ void SequentialMergeSort::mergeSort(std::vector<int>& arr, int l, int r) {
     merge(arr, l, m, r);
 }
 
+/**
+ * @brief Sorts the given array using sequential merge sort algorithm.
+ * @param arr Vector of integers to be sorted.
+ */
 void SequentialMergeSort::sort(std::vector<int>& arr) {
     mergeSort(arr, 0, arr.size() - 1);
 }
 
+/**
+ * @brief Checks if the given array is sorted.
+ * @param arr Constant vector of integers to be checked.
+ * @return true if the array is sorted, otherwise false.
+ */
 bool SequentialMergeSort::isSorted(const std::vector<int>& arr) const {
     for (size_t i = 1; i < arr.size(); ++i) {
         if (arr[i] < arr[i - 1])

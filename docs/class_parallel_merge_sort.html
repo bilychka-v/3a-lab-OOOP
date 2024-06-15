@@ -90,26 +90,74 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">ParallelMergeSort Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class for implementing parallel merge sort algorithm.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_parallel_merge_sort_8h_source.html">ParallelMergeSort.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ParallelMergeSort:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_parallel_merge_sort.png" usemap="#ParallelMergeSort_map" alt=""/>
   <map id="ParallelMergeSort_map" name="ParallelMergeSort_map">
-<area href="class_i_sort.html" alt="ISort" shape="rect" coords="0,0,115,24"/>
+<area href="class_i_sort.html" title="Abstract class for implementing sorting algorithms." alt="ISort" shape="rect" coords="0,0,115,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0e4a2fccf40d9b19a4023db363c77519" id="r_a0e4a2fccf40d9b19a4023db363c77519"><td class="memItemLeft" align="right" valign="top"><a id="a0e4a2fccf40d9b19a4023db363c77519" name="a0e4a2fccf40d9b19a4023db363c77519"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ParallelMergeSort</b> (int depth)</td></tr>
+<tr class="memitem:a0e4a2fccf40d9b19a4023db363c77519" id="r_a0e4a2fccf40d9b19a4023db363c77519"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e4a2fccf40d9b19a4023db363c77519">ParallelMergeSort</a> (int depth)</td></tr>
+<tr class="memdesc:a0e4a2fccf40d9b19a4023db363c77519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_parallel_merge_sort.html" title="Class for implementing parallel merge sort algorithm.">ParallelMergeSort</a>.  <br /></td></tr>
 <tr class="separator:a0e4a2fccf40d9b19a4023db363c77519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae752ae4e0cf9b5f7fbef1bd96e1cdc19" id="r_ae752ae4e0cf9b5f7fbef1bd96e1cdc19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae752ae4e0cf9b5f7fbef1bd96e1cdc19">sort</a> (std::vector&lt; int &gt; &amp;arr) override</td></tr>
+<tr class="memdesc:ae752ae4e0cf9b5f7fbef1bd96e1cdc19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the given array using parallel merge sort algorithm.  <br /></td></tr>
 <tr class="separator:ae752ae4e0cf9b5f7fbef1bd96e1cdc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a914846af0f603c5ebf2d8f05ad3da4e2" id="r_a914846af0f603c5ebf2d8f05ad3da4e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a914846af0f603c5ebf2d8f05ad3da4e2">isSorted</a> (const std::vector&lt; int &gt; &amp;arr) const override</td></tr>
+<tr class="memdesc:a914846af0f603c5ebf2d8f05ad3da4e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given array is sorted.  <br /></td></tr>
 <tr class="separator:a914846af0f603c5ebf2d8f05ad3da4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_i_sort"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_i_sort')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_sort.html">ISort</a></td></tr>
+<tr class="memitem:ae8474970ba572c88f06d8e26507920e4 inherit pub_methods_class_i_sort" id="r_ae8474970ba572c88f06d8e26507920e4"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~ISort</b> ()=default</td></tr>
+<tr class="memdesc:ae8474970ba572c88f06d8e26507920e4 inherit pub_methods_class_i_sort"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
+<tr class="separator:ae8474970ba572c88f06d8e26507920e4 inherit pub_methods_class_i_sort"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for implementing parallel merge sort algorithm. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0e4a2fccf40d9b19a4023db363c77519" name="a0e4a2fccf40d9b19a4023db363c77519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e4a2fccf40d9b19a4023db363c77519">&#9670;&#160;</a></span>ParallelMergeSort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParallelMergeSort::ParallelMergeSort </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>depth</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="class_parallel_merge_sort.html" title="Class for implementing parallel merge sort algorithm.">ParallelMergeSort</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">depth</td><td>The depth of parallelism. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a914846af0f603c5ebf2d8f05ad3da4e2" name="a914846af0f603c5ebf2d8f05ad3da4e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a914846af0f603c5ebf2d8f05ad3da4e2">&#9670;&#160;</a></span>isSorted()</h2>
@@ -134,7 +182,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_i_sort.html">ISort</a>.</p>
+<p>Checks if the given array is sorted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>Constant vector of integers to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the array is sorted, otherwise false. </dd></dl>
+
+<p>Implements <a class="el" href="class_i_sort.html#a2c3eef8274b0a9cf9eb961222c2485d1">ISort</a>.</p>
 
 </div>
 </div>
@@ -161,13 +218,21 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_i_sort.html">ISort</a>.</p>
+<p>Sorts the given array using parallel merge sort algorithm. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>Vector of integers to be sorted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_i_sort.html#a6736d418ded9f35338e76b497b5163c7">ISort</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_parallel_merge_sort_8h_source.html">ParallelMergeSort.h</a></li>
-<li><b>ParallelMergeSort.cpp</b></li>
+<li><a class="el" href="_parallel_merge_sort_8cpp.html">ParallelMergeSort.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

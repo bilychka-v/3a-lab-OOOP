@@ -87,23 +87,28 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">ISort.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef INC_3_LAB_ISORT_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define INC_3_LAB_ISORT_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_i_sort.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="class_i_sort.html">ISort</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_i_sort.html">~ISort</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> sort(std::vector&lt;int&gt;&amp; arr) = 0;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isSorted(<span class="keyword">const</span> std::vector&lt;int&gt;&amp; arr) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>};</div>
+<a href="_i_sort_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef INC_3_LAB_ISORT_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define INC_3_LAB_ISORT_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_i_sort.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="class_i_sort.html">ISort</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_i_sort.html#ae8474970ba572c88f06d8e26507920e4">   20</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_i_sort.html#ae8474970ba572c88f06d8e26507920e4">~ISort</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_i_sort.html#a6736d418ded9f35338e76b497b5163c7">   26</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_sort.html#a6736d418ded9f35338e76b497b5163c7">sort</a>(std::vector&lt;int&gt;&amp; arr) = 0;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_i_sort.html#a2c3eef8274b0a9cf9eb961222c2485d1">   33</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_i_sort.html#a2c3eef8274b0a9cf9eb961222c2485d1">isSorted</a>(<span class="keyword">const</span> std::vector&lt;int&gt;&amp; arr) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
 </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif </span><span class="comment">//INC_3_LAB_ISORT_H</span></div>
-<div class="ttc" id="aclass_i_sort_html"><div class="ttname"><a href="class_i_sort.html">ISort</a></div><div class="ttdef"><b>Definition</b> ISort.h:6</div></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif </span><span class="comment">//INC_3_LAB_ISORT_H</span></div>
+<div class="ttc" id="aclass_i_sort_html"><div class="ttname"><a href="class_i_sort.html">ISort</a></div><div class="ttdoc">Abstract class for implementing sorting algorithms.</div><div class="ttdef"><b>Definition</b> ISort.h:15</div></div>
+<div class="ttc" id="aclass_i_sort_html_a2c3eef8274b0a9cf9eb961222c2485d1"><div class="ttname"><a href="class_i_sort.html#a2c3eef8274b0a9cf9eb961222c2485d1">ISort::isSorted</a></div><div class="ttdeci">virtual bool isSorted(const std::vector&lt; int &gt; &amp;arr) const =0</div><div class="ttdoc">Virtual function to check if the array is sorted.</div></div>
+<div class="ttc" id="aclass_i_sort_html_a6736d418ded9f35338e76b497b5163c7"><div class="ttname"><a href="class_i_sort.html#a6736d418ded9f35338e76b497b5163c7">ISort::sort</a></div><div class="ttdeci">virtual void sort(std::vector&lt; int &gt; &amp;arr)=0</div><div class="ttdoc">Virtual function to sort an array.</div></div>
+<div class="ttc" id="aclass_i_sort_html_ae8474970ba572c88f06d8e26507920e4"><div class="ttname"><a href="class_i_sort.html#ae8474970ba572c88f06d8e26507920e4">ISort::~ISort</a></div><div class="ttdeci">virtual ~ISort()=default</div><div class="ttdoc">Virtual destructor.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

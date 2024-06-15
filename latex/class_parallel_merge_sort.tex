@@ -1,5 +1,14 @@
 \doxysection{Parallel\+Merge\+Sort Class Reference}
 \hypertarget{class_parallel_merge_sort}{}\label{class_parallel_merge_sort}\index{ParallelMergeSort@{ParallelMergeSort}}
+
+
+Class for implementing parallel merge sort algorithm.  
+
+
+
+
+{\ttfamily \#include $<$Parallel\+Merge\+Sort.\+h$>$}
+
 Inheritance diagram for Parallel\+Merge\+Sort\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,13 +18,38 @@ Inheritance diagram for Parallel\+Merge\+Sort\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_parallel_merge_sort_a0e4a2fccf40d9b19a4023db363c77519}\label{class_parallel_merge_sort_a0e4a2fccf40d9b19a4023db363c77519} 
-{\bfseries Parallel\+Merge\+Sort} (int depth)
-\item 
+\mbox{\hyperlink{class_parallel_merge_sort_a0e4a2fccf40d9b19a4023db363c77519}{Parallel\+Merge\+Sort}} (int depth)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_parallel_merge_sort}{Parallel\+Merge\+Sort}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_parallel_merge_sort_ae752ae4e0cf9b5f7fbef1bd96e1cdc19}{sort}} (std\+::vector$<$ int $>$ \&arr) override
-\item 
+\begin{DoxyCompactList}\small\item\em Sorts the given array using parallel merge sort algorithm. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_parallel_merge_sort_a914846af0f603c5ebf2d8f05ad3da4e2}{is\+Sorted}} (const std\+::vector$<$ int $>$ \&arr) const override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Checks if the given array is sorted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_sort}{ISort}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ISort} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for implementing parallel merge sort algorithm. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_parallel_merge_sort_a0e4a2fccf40d9b19a4023db363c77519}\index{ParallelMergeSort@{ParallelMergeSort}!ParallelMergeSort@{ParallelMergeSort}}
+\index{ParallelMergeSort@{ParallelMergeSort}!ParallelMergeSort@{ParallelMergeSort}}
+\doxysubsubsection{\texorpdfstring{ParallelMergeSort()}{ParallelMergeSort()}}
+{\footnotesize\ttfamily \label{class_parallel_merge_sort_a0e4a2fccf40d9b19a4023db363c77519} 
+Parallel\+Merge\+Sort\+::\+Parallel\+Merge\+Sort (\begin{DoxyParamCaption}\item[{int}]{depth}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{class_parallel_merge_sort}{Parallel\+Merge\+Sort}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em depth} & The depth of parallelism. \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -27,7 +61,19 @@ bool Parallel\+Merge\+Sort\+::is\+Sorted (\begin{DoxyParamCaption}\item[{const s
 
 
 
-Implements \mbox{\hyperlink{class_i_sort}{ISort}}.
+Checks if the given array is sorted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Constant vector of integers to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the array is sorted, otherwise false. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_sort_a2c3eef8274b0a9cf9eb961222c2485d1}{ISort}}.
 
 \Hypertarget{class_parallel_merge_sort_ae752ae4e0cf9b5f7fbef1bd96e1cdc19}\index{ParallelMergeSort@{ParallelMergeSort}!sort@{sort}}
 \index{sort@{sort}!ParallelMergeSort@{ParallelMergeSort}}
@@ -37,11 +83,20 @@ void Parallel\+Merge\+Sort\+::sort (\begin{DoxyParamCaption}\item[{std\+::vector
 
 
 
-Implements \mbox{\hyperlink{class_i_sort}{ISort}}.
+Sorts the given array using parallel merge sort algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Vector of integers to be sorted. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_sort_a6736d418ded9f35338e76b497b5163c7}{ISort}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Parallel\+Merge\+Sort.\+h\item 
-Parallel\+Merge\+Sort.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{_parallel_merge_sort_8h}{Parallel\+Merge\+Sort.\+h}}\item 
+\mbox{\hyperlink{_parallel_merge_sort_8cpp}{Parallel\+Merge\+Sort.\+cpp}}\end{DoxyCompactItemize}

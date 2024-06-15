@@ -90,26 +90,109 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">ISort Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Abstract class for implementing sorting algorithms.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_i_sort_8h_source.html">ISort.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ISort:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_i_sort.png" usemap="#ISort_map" alt=""/>
   <map id="ISort_map" name="ISort_map">
-<area href="class_parallel_merge_sort.html" alt="ParallelMergeSort" shape="rect" coords="0,56,130,80"/>
-<area href="class_sequential_merge_sort.html" alt="SequentialMergeSort" shape="rect" coords="140,56,270,80"/>
+<area href="class_parallel_merge_sort.html" title="Class for implementing parallel merge sort algorithm." alt="ParallelMergeSort" shape="rect" coords="0,56,130,80"/>
+<area href="class_sequential_merge_sort.html" title="Class for implementing sequential merge sort algorithm." alt="SequentialMergeSort" shape="rect" coords="140,56,270,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6736d418ded9f35338e76b497b5163c7" id="r_a6736d418ded9f35338e76b497b5163c7"><td class="memItemLeft" align="right" valign="top"><a id="a6736d418ded9f35338e76b497b5163c7" name="a6736d418ded9f35338e76b497b5163c7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>sort</b> (std::vector&lt; int &gt; &amp;arr)=0</td></tr>
+<tr class="memitem:ae8474970ba572c88f06d8e26507920e4" id="r_ae8474970ba572c88f06d8e26507920e4"><td class="memItemLeft" align="right" valign="top"><a id="ae8474970ba572c88f06d8e26507920e4" name="ae8474970ba572c88f06d8e26507920e4"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~ISort</b> ()=default</td></tr>
+<tr class="memdesc:ae8474970ba572c88f06d8e26507920e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
+<tr class="separator:ae8474970ba572c88f06d8e26507920e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6736d418ded9f35338e76b497b5163c7" id="r_a6736d418ded9f35338e76b497b5163c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6736d418ded9f35338e76b497b5163c7">sort</a> (std::vector&lt; int &gt; &amp;arr)=0</td></tr>
+<tr class="memdesc:a6736d418ded9f35338e76b497b5163c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual function to sort an array.  <br /></td></tr>
 <tr class="separator:a6736d418ded9f35338e76b497b5163c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c3eef8274b0a9cf9eb961222c2485d1" id="r_a2c3eef8274b0a9cf9eb961222c2485d1"><td class="memItemLeft" align="right" valign="top"><a id="a2c3eef8274b0a9cf9eb961222c2485d1" name="a2c3eef8274b0a9cf9eb961222c2485d1"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSorted</b> (const std::vector&lt; int &gt; &amp;arr) const =0</td></tr>
+<tr class="memitem:a2c3eef8274b0a9cf9eb961222c2485d1" id="r_a2c3eef8274b0a9cf9eb961222c2485d1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c3eef8274b0a9cf9eb961222c2485d1">isSorted</a> (const std::vector&lt; int &gt; &amp;arr) const =0</td></tr>
+<tr class="memdesc:a2c3eef8274b0a9cf9eb961222c2485d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual function to check if the array is sorted.  <br /></td></tr>
 <tr class="separator:a2c3eef8274b0a9cf9eb961222c2485d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Abstract class for implementing sorting algorithms. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2c3eef8274b0a9cf9eb961222c2485d1" name="a2c3eef8274b0a9cf9eb961222c2485d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3eef8274b0a9cf9eb961222c2485d1">&#9670;&#160;</a></span>isSorted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ISort::isSorted </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual function to check if the array is sorted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>Constant vector of integers to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the array is sorted, otherwise false. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_parallel_merge_sort.html#a914846af0f603c5ebf2d8f05ad3da4e2">ParallelMergeSort</a>, and <a class="el" href="class_sequential_merge_sort.html#a96f0f2e7c65b54e7058fd27118970c16">SequentialMergeSort</a>.</p>
+
+</div>
+</div>
+<a id="a6736d418ded9f35338e76b497b5163c7" name="a6736d418ded9f35338e76b497b5163c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6736d418ded9f35338e76b497b5163c7">&#9670;&#160;</a></span>sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISort::sort </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual function to sort an array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>Vector of integers to be sorted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_parallel_merge_sort.html#ae752ae4e0cf9b5f7fbef1bd96e1cdc19">ParallelMergeSort</a>, and <a class="el" href="class_sequential_merge_sort.html#abc62bc68c4ae6a398321365b0bd0e334">SequentialMergeSort</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_i_sort_8h_source.html">ISort.h</a></li>
 </ul>

@@ -1,5 +1,14 @@
 \doxysection{ISort Class Reference}
 \hypertarget{class_i_sort}{}\label{class_i_sort}\index{ISort@{ISort}}
+
+
+Abstract class for implementing sorting algorithms.  
+
+
+
+
+{\ttfamily \#include $<$ISort.\+h$>$}
+
 Inheritance diagram for ISort\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,14 +18,62 @@ Inheritance diagram for ISort\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_i_sort_a6736d418ded9f35338e76b497b5163c7}\label{class_i_sort_a6736d418ded9f35338e76b497b5163c7} 
-virtual void {\bfseries sort} (std\+::vector$<$ int $>$ \&arr)=0
-\item 
-\Hypertarget{class_i_sort_a2c3eef8274b0a9cf9eb961222c2485d1}\label{class_i_sort_a2c3eef8274b0a9cf9eb961222c2485d1} 
-virtual bool {\bfseries is\+Sorted} (const std\+::vector$<$ int $>$ \&arr) const =0
-\end{DoxyCompactItemize}
+\Hypertarget{class_i_sort_ae8474970ba572c88f06d8e26507920e4}\label{class_i_sort_ae8474970ba572c88f06d8e26507920e4} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ISort} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_sort_a6736d418ded9f35338e76b497b5163c7}{sort}} (std\+::vector$<$ int $>$ \&arr)=0
+\begin{DoxyCompactList}\small\item\em Virtual function to sort an array. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_sort_a2c3eef8274b0a9cf9eb961222c2485d1}{is\+Sorted}} (const std\+::vector$<$ int $>$ \&arr) const =0
+\begin{DoxyCompactList}\small\item\em Virtual function to check if the array is sorted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for implementing sorting algorithms. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_sort_a2c3eef8274b0a9cf9eb961222c2485d1}\index{ISort@{ISort}!isSorted@{isSorted}}
+\index{isSorted@{isSorted}!ISort@{ISort}}
+\doxysubsubsection{\texorpdfstring{isSorted()}{isSorted()}}
+{\footnotesize\ttfamily \label{class_i_sort_a2c3eef8274b0a9cf9eb961222c2485d1} 
+virtual bool ISort\+::is\+Sorted (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{arr}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual function to check if the array is sorted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Constant vector of integers to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the array is sorted, otherwise false. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_parallel_merge_sort_a914846af0f603c5ebf2d8f05ad3da4e2}{Parallel\+Merge\+Sort}}, and \mbox{\hyperlink{class_sequential_merge_sort_a96f0f2e7c65b54e7058fd27118970c16}{Sequential\+Merge\+Sort}}.
+
+\Hypertarget{class_i_sort_a6736d418ded9f35338e76b497b5163c7}\index{ISort@{ISort}!sort@{sort}}
+\index{sort@{sort}!ISort@{ISort}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \label{class_i_sort_a6736d418ded9f35338e76b497b5163c7} 
+virtual void ISort\+::sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{arr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual function to sort an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Vector of integers to be sorted. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_parallel_merge_sort_ae752ae4e0cf9b5f7fbef1bd96e1cdc19}{Parallel\+Merge\+Sort}}, and \mbox{\hyperlink{class_sequential_merge_sort_abc62bc68c4ae6a398321365b0bd0e334}{Sequential\+Merge\+Sort}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-ISort.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{_i_sort_8h}{ISort.\+h}}\end{DoxyCompactItemize}

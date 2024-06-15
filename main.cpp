@@ -1,13 +1,26 @@
-// File: main.cpp
+/**
+ * @file main.cpp
+ * @brief Demonstrates sequential and parallel merge sort algorithms on a large array.
+ */
+
 #include <iostream>
 #include <vector>
 #include <chrono>
 #include <algorithm>
-#include <random>
+#include <random> // Include for std::random_device, std::mt19937, std::uniform_int_distribution
 #include "SequentialMergeSort.h"
 #include "ParallelMergeSort.h"
-#include <thread>
+#include <thread> // Include for std::thread and std::thread::hardware_concurrency()
 
+/**
+ * @brief Main function to demonstrate sequential and parallel merge sort algorithms.
+ *
+ * This function initializes a large random array, performs sorting using both SequentialMergeSort
+ * and ParallelMergeSort, measures the execution time for each sorting method, and checks if the
+ * arrays are sorted correctly.
+ *
+ * @return 0 on successful execution.
+ */
 int main() {
     const int N = 1000000; // Size of the array
     const int depth = std::thread::hardware_concurrency(); // Depth for parallelization
@@ -52,7 +65,6 @@ int main() {
 
     return 0;
 }
-
 
 
 

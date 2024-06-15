@@ -57,14 +57,6 @@ build CMakeFiles/3_lab.dir/main.cpp.o: CXX_COMPILER__3_lab_unscanned_Debug /User
   TARGET_COMPILE_PDB = CMakeFiles/3_lab.dir/
   TARGET_PDB = 3_lab.pdb
 
-build CMakeFiles/3_lab.dir/ISort.cpp.o: CXX_COMPILER__3_lab_unscanned_Debug /Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/ISort.cpp || cmake_object_order_depends_target_3_lab
-  DEP_FILE = CMakeFiles/3_lab.dir/ISort.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/3_lab.dir
-  OBJECT_FILE_DIR = CMakeFiles/3_lab.dir
-  TARGET_COMPILE_PDB = CMakeFiles/3_lab.dir/
-  TARGET_PDB = 3_lab.pdb
-
 build CMakeFiles/3_lab.dir/SequentialMergeSort.cpp.o: CXX_COMPILER__3_lab_unscanned_Debug /Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/SequentialMergeSort.cpp || cmake_object_order_depends_target_3_lab
   DEP_FILE = CMakeFiles/3_lab.dir/SequentialMergeSort.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
@@ -89,7 +81,7 @@ build CMakeFiles/3_lab.dir/ParallelMergeSort.cpp.o: CXX_COMPILER__3_lab_unscanne
 #############################################
 # Link the executable 3_lab
 
-build 3_lab: CXX_EXECUTABLE_LINKER__3_lab_Debug CMakeFiles/3_lab.dir/main.cpp.o CMakeFiles/3_lab.dir/ISort.cpp.o CMakeFiles/3_lab.dir/SequentialMergeSort.cpp.o CMakeFiles/3_lab.dir/ParallelMergeSort.cpp.o
+build 3_lab: CXX_EXECUTABLE_LINKER__3_lab_Debug CMakeFiles/3_lab.dir/main.cpp.o CMakeFiles/3_lab.dir/SequentialMergeSort.cpp.o CMakeFiles/3_lab.dir/ParallelMergeSort.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/3_lab.dir
   POST_BUILD = :
@@ -109,15 +101,6 @@ build cmake_object_order_depends_target_test_sort: phony || cmake_object_order_d
 
 build CMakeFiles/test_sort.dir/test_sort.cpp.o: CXX_COMPILER__test_sort_unscanned_Debug /Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/test_sort.cpp || cmake_object_order_depends_target_test_sort
   DEP_FILE = CMakeFiles/test_sort.dir/test_sort.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  INCLUDES = -isystem /Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/cmake-build-debug/_deps/googletest-src/googletest
-  OBJECT_DIR = CMakeFiles/test_sort.dir
-  OBJECT_FILE_DIR = CMakeFiles/test_sort.dir
-  TARGET_COMPILE_PDB = CMakeFiles/test_sort.dir/
-  TARGET_PDB = test_sort.pdb
-
-build CMakeFiles/test_sort.dir/ISort.cpp.o: CXX_COMPILER__test_sort_unscanned_Debug /Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/ISort.cpp || cmake_object_order_depends_target_test_sort
-  DEP_FILE = CMakeFiles/test_sort.dir/ISort.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -isystem /Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/test_sort.dir
@@ -151,7 +134,7 @@ build CMakeFiles/test_sort.dir/ParallelMergeSort.cpp.o: CXX_COMPILER__test_sort_
 #############################################
 # Link the executable test_sort
 
-build test_sort: CXX_EXECUTABLE_LINKER__test_sort_Debug CMakeFiles/test_sort.dir/test_sort.cpp.o CMakeFiles/test_sort.dir/ISort.cpp.o CMakeFiles/test_sort.dir/SequentialMergeSort.cpp.o CMakeFiles/test_sort.dir/ParallelMergeSort.cpp.o | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+build test_sort: CXX_EXECUTABLE_LINKER__test_sort_Debug CMakeFiles/test_sort.dir/test_sort.cpp.o CMakeFiles/test_sort.dir/SequentialMergeSort.cpp.o CMakeFiles/test_sort.dir/ParallelMergeSort.cpp.o | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a
   OBJECT_DIR = CMakeFiles/test_sort.dir

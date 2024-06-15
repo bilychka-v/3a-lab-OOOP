@@ -1,26 +1,30 @@
 \doxysection{Parallel\+Merge\+Sort.\+h}
-\hypertarget{_parallel_merge_sort_8h_source}{}\label{_parallel_merge_sort_8h_source}
+\hypertarget{_parallel_merge_sort_8h_source}{}\label{_parallel_merge_sort_8h_source}\mbox{\hyperlink{_parallel_merge_sort_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ INC\_3\_LAB\_PARALLELMERGESORT\_H}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ INC\_3\_LAB\_PARALLELMERGESORT\_H}}
-\DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ISort.h"{}}}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_parallel_merge_sort}{ParallelMergeSort}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_sort}{ISort}}\ \{}
-\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_parallel_merge_sort}{ParallelMergeSort}}(\textcolor{keywordtype}{int}\ depth);}
-\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ sort(std::vector<int>\&\ arr)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ isSorted(\textcolor{keyword}{const}\ std::vector<int>\&\ arr)\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ merge(std::vector<int>\&\ arr,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ m,\ \textcolor{keywordtype}{int}\ r);}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ parallelMergeSort(std::vector<int>\&\ arr,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ r,\ \textcolor{keywordtype}{int}\ depth);}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ mergeSort(std::vector<int>\&\ arr,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ r);}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ depth\_;}
-\DoxyCodeLine{00018\ \};}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_3\_LAB\_PARALLELMERGESORT\_H}}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ INC\_3\_LAB\_PARALLELMERGESORT\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ INC\_3\_LAB\_PARALLELMERGESORT\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_sort_8h}{ISort.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_parallel_merge_sort}{ParallelMergeSort}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_sort}{ISort}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_parallel_merge_sort_a0e4a2fccf40d9b19a4023db363c77519}{ParallelMergeSort}}(\textcolor{keywordtype}{int}\ depth);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_parallel_merge_sort_ae752ae4e0cf9b5f7fbef1bd96e1cdc19}{sort}}(std::vector<int>\&\ arr)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_parallel_merge_sort_a914846af0f603c5ebf2d8f05ad3da4e2}{isSorted}}(\textcolor{keyword}{const}\ std::vector<int>\&\ arr)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ merge(std::vector<int>\&\ arr,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ m,\ \textcolor{keywordtype}{int}\ r);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ parallelMergeSort(std::vector<int>\&\ arr,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ r,\ \textcolor{keywordtype}{int}\ depth);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ mergeSort(std::vector<int>\&\ arr,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ r);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ depth\_;}
+\DoxyCodeLine{00067\ \};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_3\_LAB\_PARALLELMERGESORT\_H}}
 
 \end{DoxyCode}

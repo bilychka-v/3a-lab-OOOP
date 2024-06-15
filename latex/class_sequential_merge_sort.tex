@@ -1,5 +1,14 @@
 \doxysection{Sequential\+Merge\+Sort Class Reference}
 \hypertarget{class_sequential_merge_sort}{}\label{class_sequential_merge_sort}\index{SequentialMergeSort@{SequentialMergeSort}}
+
+
+Class for implementing sequential merge sort algorithm.  
+
+
+
+
+{\ttfamily \#include $<$Sequential\+Merge\+Sort.\+h$>$}
+
 Inheritance diagram for Sequential\+Merge\+Sort\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,10 +19,18 @@ Inheritance diagram for Sequential\+Merge\+Sort\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_sequential_merge_sort_abc62bc68c4ae6a398321365b0bd0e334}{sort}} (std\+::vector$<$ int $>$ \&arr) override
-\item 
+\begin{DoxyCompactList}\small\item\em Sorts the given array using sequential merge sort algorithm. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_sequential_merge_sort_a96f0f2e7c65b54e7058fd27118970c16}{is\+Sorted}} (const std\+::vector$<$ int $>$ \&arr) const override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Checks if the given array is sorted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_sort}{ISort}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ISort} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class for implementing sequential merge sort algorithm. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_sequential_merge_sort_a96f0f2e7c65b54e7058fd27118970c16}\index{SequentialMergeSort@{SequentialMergeSort}!isSorted@{isSorted}}
@@ -24,7 +41,19 @@ bool Sequential\+Merge\+Sort\+::is\+Sorted (\begin{DoxyParamCaption}\item[{const
 
 
 
-Implements \mbox{\hyperlink{class_i_sort}{ISort}}.
+Checks if the given array is sorted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Constant vector of integers to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the array is sorted, otherwise false. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_sort_a2c3eef8274b0a9cf9eb961222c2485d1}{ISort}}.
 
 \Hypertarget{class_sequential_merge_sort_abc62bc68c4ae6a398321365b0bd0e334}\index{SequentialMergeSort@{SequentialMergeSort}!sort@{sort}}
 \index{sort@{sort}!SequentialMergeSort@{SequentialMergeSort}}
@@ -34,11 +63,20 @@ void Sequential\+Merge\+Sort\+::sort (\begin{DoxyParamCaption}\item[{std\+::vect
 
 
 
-Implements \mbox{\hyperlink{class_i_sort}{ISort}}.
+Sorts the given array using sequential merge sort algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Vector of integers to be sorted. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_sort_a6736d418ded9f35338e76b497b5163c7}{ISort}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Sequential\+Merge\+Sort.\+h\item 
-Sequential\+Merge\+Sort.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{_sequential_merge_sort_8h}{Sequential\+Merge\+Sort.\+h}}\item 
+\mbox{\hyperlink{_sequential_merge_sort_8cpp}{Sequential\+Merge\+Sort.\+cpp}}\end{DoxyCompactItemize}
