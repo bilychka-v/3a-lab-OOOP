@@ -1,5 +1,0 @@
-if(EXISTS "/Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/cmake-build-debug/test_sort.cpp[1]_tests.cmake")
-  include("/Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/cmake-build-debug/test_sort.cpp[1]_tests.cmake")
-else()
-  add_test(test_sort.cpp_NOT_BUILT test_sort.cpp_NOT_BUILT)
-endif()
