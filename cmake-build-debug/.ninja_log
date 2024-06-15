@@ -1,0 +1,22 @@
+# ninja log v5
+15	936	1718451519897394109	CMakeFiles/3_lab.dir/merge_sort_sequential.cpp.o	c216236203ced89d
+20	2603	1718454439428959006	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o	869e0ce5caab7ca7
+17	670	1718454437466354490	3_lab	dbaa81cd87ac97d0
+15	983	1718451519947148731	CMakeFiles/3_lab.dir/merge_sort_parallel.cpp.o	bf0becc129be7415
+20	1912	1718453895641060963	CMakeFiles/3_lab.dir/ParallelMergeSort.cpp.o	eaa88a9a5a6047f8
+17	1395	1718454438224092808	CMakeFiles/test_sort.dir/ISort.cpp.o	4017149483972604
+1475	2636	1718454439468069018	CMakeFiles/test_sort.dir/ParallelMergeSort.cpp.o	b530a522877b1cfe
+20	1642	1718453895370858488	CMakeFiles/3_lab.dir/ISort.cpp.o	92b79e912e2bb5b
+20	1881	1718453895608030058	CMakeFiles/3_lab.dir/SequentialMergeSort.cpp.o	2bb9678add115a11
+0	296	1718472784329936089	build.ninja	343e3d3f52d0f963
+18	2668	1718454439498368848	CMakeFiles/test_sort.dir/test_sort.cpp.o	eb4d0dc173ff2ae9
+19	3505	1718454440335576062	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o	f3aa2242c4d43d71
+17	1475	1718454438305688573	CMakeFiles/test_sort.dir/SequentialMergeSort.cpp.o	a2aa343424451247
+20	2136	1718453895865927735	CMakeFiles/3_lab.dir/main.cpp.o	c46e8b1dba9ed724
+1396	3066	1718454439898484404	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	e7f6d46f8122f92
+670	4642	1718454441472754205	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	e5659ec124e4e9b3
+4703	4749	1718454441590779000	lib/libgmock.a	3711acbfc21141f2
+4749	4789	1718454441631030000	lib/libgmock_main.a	42ebec52740972c5
+4644	4703	1718454441544396000	lib/libgtest.a	cbb41787cf97926c
+4703	4737	1718454441578283000	lib/libgtest_main.a	4e8461fcc2b017d6
+4737	4817	1718454441655817803	test_sort	98eccb924e1418e1
