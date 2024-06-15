@@ -1,0 +1,26 @@
+\doxysection{Parallel\+Merge\+Sort.\+h}
+\hypertarget{_parallel_merge_sort_8h_source}{}\label{_parallel_merge_sort_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ INC\_3\_LAB\_PARALLELMERGESORT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ INC\_3\_LAB\_PARALLELMERGESORT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ISort.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_parallel_merge_sort}{ParallelMergeSort}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_sort}{ISort}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_parallel_merge_sort}{ParallelMergeSort}}(\textcolor{keywordtype}{int}\ depth);}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ sort(std::vector<int>\&\ arr)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ isSorted(\textcolor{keyword}{const}\ std::vector<int>\&\ arr)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ merge(std::vector<int>\&\ arr,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ m,\ \textcolor{keywordtype}{int}\ r);}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ parallelMergeSort(std::vector<int>\&\ arr,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ r,\ \textcolor{keywordtype}{int}\ depth);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ mergeSort(std::vector<int>\&\ arr,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ r);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ depth\_;}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//INC\_3\_LAB\_PARALLELMERGESORT\_H}}
+
+\end{DoxyCode}
