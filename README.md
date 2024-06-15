@@ -1,1 +1,1 @@
-##[Doxygen documentation](https://vikabilyk.github.io/3a-lab-OOOP/annotated.html)
+##[Doxygen documentation](https://vikabilyk.github.io/3a-lab-OOOP/)
