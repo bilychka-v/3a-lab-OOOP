@@ -1,0 +1,41 @@
+Start testing: Jun 15 15:26 EEST
+----------------------------------------------------------
+1/1 Testing: test_sort
+1/1 Test: test_sort
+Command: "/Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/build/test_sort"
+Directory: /Users/ilagoncarenko/Downloads/ALL/Work/С++/3-lab/build
+"test_sort" start time: Jun 15 15:26 EEST
+Output:
+----------------------------------------------------------
+[==========] Running 6 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 5 tests from MergeSortTest
+[ RUN      ] MergeSortTest.HandlesEmptyArray
+[       OK ] MergeSortTest.HandlesEmptyArray (0 ms)
+[ RUN      ] MergeSortTest.HandlesSingleElementArray
+[       OK ] MergeSortTest.HandlesSingleElementArray (0 ms)
+[ RUN      ] MergeSortTest.HandlesSortedArray
+[       OK ] MergeSortTest.HandlesSortedArray (0 ms)
+[ RUN      ] MergeSortTest.HandlesUnsortedArray
+[       OK ] MergeSortTest.HandlesUnsortedArray (0 ms)
+[ RUN      ] MergeSortTest.HandlesLargeArray
+[       OK ] MergeSortTest.HandlesLargeArray (1421 ms)
+[----------] 5 tests from MergeSortTest (1421 ms total)
+
+[----------] 1 test from ParallelMergeSortTest
+[ RUN      ] ParallelMergeSortTest.HandlesLargeArray
+[       OK ] ParallelMergeSortTest.HandlesLargeArray (665 ms)
+[----------] 1 test from ParallelMergeSortTest (665 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test suites ran. (2086 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   2.31 sec
+----------------------------------------------------------
+Test Passed.
+"test_sort" end time: Jun 15 15:26 EEST
+"test_sort" time elapsed: 00:00:02
+----------------------------------------------------------
+
+End testing: Jun 15 15:26 EEST
